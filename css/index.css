@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Trajan Pro 3", Times, serif;
+  font-size: 62.5%;
+  color: white;
+  background: linear-gradient(to bottom, #1d1d1d 10%, #055133 100%);
+}
+
+body {
+  font-size: 1.8rem;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  position: relative; 
+  z-index: 1;
+}
+
+object {
+	position: relative; 
+	z-index: -1
+}
+
+span{
+	display: inline-block;
+}
+
+#c {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.center {
+display:  grid;grid-template-columns: min-content;/* display: flow-root; */justify-content: center;}
+.bottom, .top,
+.topright,
+.botright,
+.topleft,
+.botleft,
+.top-cog,
+.bot-cog{
+	visibility: hidden;
+}
+
+svg:hover .bottom,
+svg:hover .top,
+svg:hover .botleft,
+svg:hover .botright,
+svg:hover .topright,
+svg:hover .topleft,
+svg:hover .top-cog,
+svg:hover .bot-cog{
+	visibility: visible;
+}
+
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -7rem;
+  position: relative;
+}
+
+
+.graphics3 {
+height: 150px;
+width: 365px;
+margin-left: 280px;
+margin-right: 280px;
+padding-top: 3rem;
+}
+
+
+.section1 {
+	height: 10rem;
+}
+
+.section3{
+	padding: 6rem;
+	text-align: center;
+}
+
+.section4 {
+	padding: 6rem;
+	text-align: center;
+}
+
+
+[class*="section"] {
+	min-height: 1px;
+}
+
+.row {
+	padding-bottom: 2rem;
+}
+.row:before, .row:after{
+	display: table;
+	content: "";
+}
+
+.row:after {
+	clear:both;
+}
+
+footer, .push {
+  height: 7rem;
+}
+
+footer .footer-contents {
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+}
+
+.website-nav {
+  position: relative;
+  padding: 5rem;
+}
+
+.website-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.website-nav ul li {
+  float: left;
+  padding: 0.5rem 2rem 0.5rem 0;
+  line-height: 21px;
+}
+
+.website-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.home-link {
+  font-weight: bold;
+}
+
+.message {
+  position: relative;
+  padding: 0 5rem;
+  margin-bottom: 3rem;
+  width: auto;
+}
+
+.message .twitter-link {
+  float: left;
+  margin-right: 20px;
+}
+
+.message .twitter-link img {
+  width: 40px;
+  height: 40px;
+}
+
+.message .text {
+  float: left;
+}
+
+
+.message:after, .website-nav:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.graphics {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0;
+}
+
+.graphics .tower svg {
+  width: calc(49vw);
+  height: calc(90vh);
+}
+
+.graphics .tower2 svg {
+    width: calc(49vw);
+    height: calc(90vh);
+}
+
+.tower {
+	float: left;
+}
+.tower2 {
+	float: right;
+}
+
+.graphics .cloud {
+  top: 30rem;
+  position: relative;
+}
+
+.page-content {
+  padding: 1rem 5rem;
+}
+
+.page-content p {
+  margin-bottom: 1rem;
+}
+
+
+.path {
+  stroke-dasharray: 4000;
+  stroke-dashoffset: 4000;
+}
+
+.pillar-side path {
+	animation: dash 10s linear forwards;
+	animation-delay: .4s;
+}
+
+.pillar-base path {
+	animation: dash 20s linear forwards;
+	animation-delay: 0s;
+	
+}
+
+.right-swirl path {
+    animation: dash 20s linear forwards;
+
+}
+
+.left-swirl path {
+	animation: dash 20s linear forwards;	
+}
+
+.lines path {
+	animation: dash 60s linear forwards;
+	animation-delay: 1.5s;
+}
+
+.downs path {
+	animation: dash 20s linear forwards;
+	animation-delay: 1.8s;
+}
+
+.drapes path {
+	animation: dash 40s linear forwards;
+	animation-delay: 1.8s;
+}
+
+.emblems path {
+	animation: dash 20s linear forwards;
+	animation-delay: 1.8s;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  
+	.center {
+	display: inline-block;}
+
+.graphics {display: block;}
+
+
+.graphics1 {height: 150px;
+    width: 365px;
+    float: left;
+    padding-right: 6rem;}
+
+.graphics2 {height: 150px;
+    width: 365px;
+    float: left;
+    padding-right: 8rem;}
+
+}
+
