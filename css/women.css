@@ -34,6 +34,10 @@ a {
   text-decoration: none;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+}
 
 .wrapper {
   min-height: 100%;
@@ -51,11 +55,12 @@ footer .footer-contents {
   padding: 1rem;
   position: fixed;
   bottom: 0;
+  font-size: 1rem;
 }
 
 .website-nav {
   position: relative;
-  padding: 5rem;
+  padding: 2rem;
 }
 
 .website-nav ul {
@@ -71,11 +76,6 @@ footer .footer-contents {
   line-height: 21px;
 }
 
-.website-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
 .home-link {
   font-weight: bold;
 }
@@ -85,16 +85,11 @@ footer .footer-contents {
   padding: 0 5rem;
   margin-bottom: 3rem;
   width: auto;
-}
-
-.message .twitter-link {
-  float: left;
-  margin-right: 20px;
-}
-
-.message .twitter-link img {
-  width: 40px;
-  height: 40px;
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .message .text {
@@ -231,16 +226,29 @@ transform: translateX(300px) translateY(-75px) rotate(-45deg);
   }
 }
 
-@media (min-height: 500px) and (min-width: 700px) {
+@media (min-height: 500px) and (min-width: 760px) {
   .message {
     padding: 0;
     width: 50%;
     left: calc(15vw - 10rem);
-    top: calc(10vh - 15rem);
+    font-size: 1.5rem;
+  }
+
+  footer .footer-contents {
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    font-size: 1.5rem;
+  }
+  
+  header {
+    display: flex;
+    justify-content: right;
+    width: 100%;
   }
 
   .message .text {
-    padding-right: 0rem;
+    padding-left: 0rem;
   }
 
   .graphics {
@@ -261,16 +269,10 @@ transform: translateX(300px) translateY(-75px) rotate(-45deg);
 @media (min-height: 500px) and (min-width: 1240px) {
   .message {
     left: calc(15vw - 10rem);
-    top: calc(10vh - 15rem);
   }
 
   h1 {
     font-size: 5rem;
-  }
-
-  .message .twitter-link img {
-    width: 80%;
-    height: 80%;
   }
 }
 
