@@ -71,6 +71,14 @@ footer .footer-contents {
   position: relative;
 }
 
+@font-face {
+  font-family: 'trajan_pro_3light';
+  src: url(../resources/trajanpro3light-webfont.woff2) format('woff2'),
+       url(../resources/trajanpro3light-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .website-nav {
   position: relative;
   padding: 2rem;

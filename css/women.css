@@ -9,7 +9,7 @@ html, body {
 html {
   margin: 0;
   padding: 0;
-  font-family: "Trajan Pro 3", Times, serif;
+  font-family: 'trajan_pro_3light', Times, serif;
   font-size: 62.5%;
   color: white;
   background: linear-gradient(to bottom, #200d37 10%, #93428e 100%);
@@ -56,6 +56,14 @@ footer .footer-contents {
   position: fixed;
   bottom: 0;
   font-size: 1rem;
+}
+
+@font-face {
+  font-family: 'trajan_pro_3light';
+  src: url(../resources/trajanpro3light-webfont.woff2) format('woff2'),
+       url(../resources/trajanpro3light-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .website-nav {

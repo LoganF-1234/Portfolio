@@ -10,7 +10,7 @@ html, body {
 html {
   margin: 0;
   padding: 0;
-  font-family: "Trajan Pro 3", Times, serif;
+  font-family: trajan_pro_3light, Times, serif;
   font-size: 62.5%;
   color: white;
   background: linear-gradient(to bottom, #1d1d1d 10%, #055133 100%);
@@ -25,9 +25,9 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   margin-bottom: 0.5rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 a {
@@ -58,6 +58,15 @@ header {
     width: 90%;
     text-align: center;
 }
+
+@font-face {
+  font-family: 'trajan_pro_3light';
+  src: url(../resources/trajanpro3light-webfont.woff2) format('woff2'),
+       url(../resources/trajanpro3light-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 .center {
 display:  grid;grid-template-columns: min-content;/* display: flow-root; */justify-content: center;}
@@ -109,7 +118,8 @@ height: 75px;
 .section1 {
 	height: 10rem;
   font-size: 1rem;
-  padding-top: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 .section3{
@@ -147,6 +157,7 @@ footer .footer-contents {
   padding: 1rem;
   position: fixed;
   bottom: 0;
+  font-size: 1rem;
 }
 
 .website-nav {
@@ -296,35 +307,39 @@ footer .footer-contents {
 	.center {
 	display: inline-block;}
 
-.graphics {display: block;}
+  .graphics {display: block;}
 
-.graphics1 {height: 150px;
-    width: 365px;
-    float: left;
-    padding-right: 6rem;}
+  .graphics1 {height: 150px;
+      width: 365px;
+      float: left;
+      padding-right: 6rem;}
 
-.graphics2 {height: 150px;
-    width: 365px;
-    float: left;
-    padding-right: 8rem;}
+  .graphics2 {height: 150px;
+      width: 365px;
+      float: left;
+      padding-right: 8rem;}
 
-.section1 {
-  font-size: 1.5rem;
-}
+  .section1 {
+    font-size: 1.5rem;
+  }
 
-header {
-  visibility: visible;
-  content-visibility: visible;
-}
+  header {
+    visibility: visible;
+    content-visibility: visible;
+  }
 
-.section3{
-	padding: 6rem;
-	text-align: center;
-}
+  .section3{
+    padding: 6rem;
+    text-align: center;
+  }
 
-.section4 {
-	padding: 6rem;
-	text-align: center;
-}
+  .section4 {
+    padding: 6rem;
+    text-align: center;
+  }
+
+  footer .footer-contents {
+    font-size: 2rem;
+  }
 
 }

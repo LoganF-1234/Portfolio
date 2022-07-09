@@ -9,7 +9,7 @@ html, body {
 html {
   margin: 0;
   padding: 0;
-  font-family: "Trajan Pro 3", Times, serif;
+  font-family: 'trajan_pro_3light', Times, serif;
   font-size: 62.5%;
   color: white;
   background: linear-gradient(to bottom, #020111 10%, #3a3a52 100%);
@@ -26,7 +26,7 @@ h1, h2, h3 {
 h1 {
   font-size: 3.5rem;
   margin-bottom: 0.5rem;
-  font-weight: bold;
+  /* font-weight: bold; until I can get the real Trajan Pro 3 Adobe font*/
 }
 
 a {
@@ -50,6 +50,15 @@ footer .footer-contents {
   padding: 1rem;
   position: fixed;
   bottom: 0;
+  font-size: 1rem;
+}
+
+@font-face {
+  font-family: 'trajan_pro_3light';
+  src: url(../resources/trajanpro3light-webfont.woff2) format('woff2'),
+       url(../resources/trajanpro3light-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .website-nav {
@@ -218,6 +227,11 @@ animation-delay: 3.2s;
   .page-content {
     padding: 3rem 5rem;
   }
+
+  footer .footer-contents {
+    font-size: 2rem;
+  }
+  
 }
 
 @media (min-height: 500px) and (min-width: 1240px) {
