@@ -1,7 +1,7 @@
 // const ld = () => {
   const width =
   window.innerWidth
-const height =
+  const height =
   window.innerHeight
 
 const sword = document.getElementById("Layer_1");
