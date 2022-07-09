@@ -317,7 +317,7 @@ footer .footer-contents {
     padding-bottom: 0rem;
   }
 
-  header {
+  header { /*solely for desktop responsive real time testing, this does same as removeHeader.js */
     visibility: visible;
     content-visibility: visible;
   }
