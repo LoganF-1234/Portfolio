@@ -152,7 +152,7 @@ html {
 
 @media only screen and (max-height: 830px) and (max-width: 913px) {
   .game-container, .game-container2 { 
-    grid-auto-rows: 12px;
+    grid-auto-rows: 10px;
     margin-bottom: 10px;
   }
 
@@ -161,7 +161,7 @@ html {
   }
 
   .title-container {
-    margin: 1rem;
+    margin: 2rem;
   }
 }
 
