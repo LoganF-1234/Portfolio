@@ -8,4 +8,4 @@
 
 ### Anyone can throw services at their project until it works. But understanding on a fundamental level the scope of your application and the technologies best suited for it will allow you to choose the best (and simplest) solution in the long run; and as a result, save you valuable resources and time.
 
-#### *Note: Safari does not correctly display the responsive settings for the main page of the site. It does not even display the correct font. Working on a fix.
+#### *Note: Safari does not correctly display the responsive settings for a few pages on the site. Responsive on desktop works great (even when selecting iPhone X in Dev Tools), so I recommend viewing on PC until I work out a few bugs on iPhone.
